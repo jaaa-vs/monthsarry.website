@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthsarry Scrapbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scrapbook">
+        <h1>Monthsarry Scrapbook</h1>
+        
+        <div class="slideshow-container">
+            <div class="slide active" id="slide1">
+                <img src="bfd564cd-30d1-4a35-9044-0544a38d5534.jpg" alt="Memory 1">
+                <div class="caption">Photojournalist days</div>
+            </div>
+            <div class="slide" id="slide2">
+                <img src="6134449188868573221.jpg" alt="Memory 2">
+                <div class="caption">Your 18th Birthday</div>
+            </div>
+            <div class="slide" id="slide3">
+                <img src="6132115106071431277.jpg" alt="Memory 3">
+                <div class="caption">Coffee date</div>
+            </div>
+            <div class="slide" id="slide4">
+                <img src="6154379263051155871.jpg" alt="Memory 4">
+                <div class="caption">Lunch Date</div>
+            </div>
+            <div class="slide" id="slide5">
+                <img src="6132115106071431273.jpg" alt="Memory 5">
+                <div class="caption">Graduation Picture</div>
+            </div>
+            <div class="slide" id="slide6">
+                <img src="47ab400d-c745-42a6-bc87-37165cae9f8c.jpg" alt="Memory 6">
+                <div class="caption">Date before going to class</div>
+            </div>
+            <div class="slide" id="slide7">
+                <img src="6186128503116777036.jpg" alt="Memory 7">
+                <div class="caption">House Date</div>
+            </div>
+            <div class="slide" id="slide8">
+                <img src="6154379263051155865.jpg" alt="Memory 8">
+                <div class="caption">Coffee Date</div>
+            </div>
+            <div class="slide" id="slide9">
+                <img src="6154379263051155869.jpg" alt="Memory 9">
+                <div class="caption">Still Coffee Date</div>
+            </div>
+            <div class="slide" id="slide10">
+                <img src="a7d1cebb-e012-4462-9358-10173c00e3fe.jpg" alt="Memory 10">
+                <div class="caption">Recent House Date</div>
+            </div>
+            
+            <button class="nav-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="nav-btn next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+        
+        <div class="letter-container">
+            <button class="open-letter-btn" onclick="openLetter()">📜 Open Letter</button>
+        </div>
+
+        <!-- Full Screen Letter Modal -->
+        <div class="letter-modal" id="letterModal">
+            <div class="letter-overlay" onclick="closeLetter()"></div>
+            <div class="letter-content">
+                <div class="letter-paper">
+                    <div class="letter-header">
+                        <div class="heart-decoration"></div>
+                        <h2>Happy 4th month baby ko!,</h2>
+                    </div>
+
+                    <div class="letter-body">
+                        <div class="letter-page">
+                              <p class="main-message">I am so happy na we got this far na. time flies so fast parang kelan lang crush mo palang ako eme. we've been through a lot andami na nating hinarap na problema. pero here we are still together and still growing. as we venture through our college life. we still have the same goal and same us. we just go to different colleges. no matter what happens or whay problem we face. we will overcome it and stay. we will be more stronger than ever. I know we have arguments na hindi natin minsan maintindihan and isa't isa. I know nakakapagod akong intindihin minsan. pero sana pag napagod ka sa'kin ka parin magpapahinga. mahal na mahal po kita and I will do everything to keep you and make you feel the love that you deserve baby. I am willing to risk everything for you because I know it is worth it. we will grow old together. we promised right. we will make those plans and dreams come true.kung sa mga panahon na parang nararamdaman mo di kita mahal. mas ipaparamdam ko sayo kung gano kita kamahal. I can't imagine a life without you baby. kaya let's always communicate and fix everything. to more months, year, and decade with you baby. I love youu till eternity 😗</p>
+
+                            <div class="letter-closing">
+                                <p>With all my love,</p>
+                                <div class="signature-line">
+                                   <p>your baby jarell 🥰</p>
+                                    <div class="signature-decoration">✦</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="letter-footer">
+                        <div class="decorative-line"></div>
+                        <p class="date">Written on: <span id="currentDate"></span></p>
+                    </div>
+                </div>
+
+                <button class="close-letter-btn" onclick="closeLetter()">✕</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
